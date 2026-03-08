@@ -35,7 +35,7 @@ export default function EventsPage() {
     <Card className={classes.root}>
       <CardActionArea>
         <CardContent>
-        <a href = {a.link} target="_blank">
+        <a href = {a.link} target="_blank" rel="noreferrer">
           <Typography gutterBottom variant="h5" component="h2">
            {a.topic}
           </Typography>

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./infocard.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -20,8 +20,9 @@ function goTo(link) {
   }
 }
 
-export default () => (
-  <Layout>
+export default function HomePage() {
+  return (
+    <Layout>
     <div style={{ paddingTop: '65px' }}>
       <div
         className={`container d-flex flex-column justify-content-around ${styles.container}`}
@@ -123,6 +124,7 @@ export default () => (
           <img
             className="img-fluid"
             src={shelogo}
+            alt="SheGazette logo"
             onClick={() => goTo(linkToSheGazette)}
           />
         </div>
@@ -130,4 +132,4 @@ export default () => (
     </div>
     </div>
   </Layout>
-);
+);}
