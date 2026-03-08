@@ -36,18 +36,6 @@ export default function Footer() {
                 <a href="/community">About Us</a>
               </li>
               <li>
-                <a
-                  href="https://discord.com/invite/xvzbAXk"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Contact Us
-                </a>
-              </li>
-              <li>
-                <a href="/contributing">Contribute</a>
-              </li>
-              <li>
                 <a href="#">Privacy Policy</a>
               </li>
             </ul>
