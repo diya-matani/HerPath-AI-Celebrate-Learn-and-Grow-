@@ -15,8 +15,8 @@ const MomCardGenerator = () => {
 
   return (
     <div className="ai-feature-card">
-      <h3 className="mb-4">Appreciation Section for Mothers & Housewives</h3>
-      <p>Recognizing the women who contribute immensely to our families and society but are often underappreciated.</p>
+      <h3 className="mb-4">Appreciation Section for Women</h3>
+      <p>Recognizing the women who contribute immensely to our lives and society but are often underappreciated.</p>
       
       {!showCard ? (
         <form onSubmit={handleGenerate} className="mt-4">
@@ -25,7 +25,7 @@ const MomCardGenerator = () => {
             <input 
               type="text" 
               className="form-control" 
-              placeholder="e.g. Mom, Anya, Mrs. Smith" 
+              placeholder="e.g. Anya, Mrs. Smith, Mom" 
               value={name} 
               onChange={(e) => setName(e.target.value)} 
               required 
@@ -50,7 +50,7 @@ const MomCardGenerator = () => {
             <h2>Dear {name},</h2>
             <p>"{message}"</p>
             <p className="quote-text mb-0 mt-4">
-              "Not all heroes wear capes — some are called Mom."
+              "Here's to strong women: May we know them. May we be them. May we raise them."
             </p>
           </div>
           <button className="btn btn-outline-secondary mt-4" onClick={() => setShowCard(false)}>
