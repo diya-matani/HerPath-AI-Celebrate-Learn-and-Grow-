@@ -8,7 +8,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import image from "../../images/members/shikha.jpeg";
 import "./Founder.css";
 import linkedin from "../../images/social/linkedin.png";
 import github from "../../images/social/github.png";

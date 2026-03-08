@@ -1,21 +1,17 @@
 import React from "react";
 import { Card, CardContent, Divider } from "@material-ui/core";
 
-import CarouselComponent from "../CarouselComponent/CarouselComponent";
-
 import "./infographics.css";
 
 import pdf1 from "../../pdf/Competitive Programming_WiT.pdf";
 import pdf2 from "../../pdf/Cyber Security_WiT.pdf";
 import pdf3 from "../../pdf/FRONT_WEB_DEVELOPMENT_101.pdf";
 import pdf4 from "../../pdf/Open Source Projects_WiT.pdf";
-import pdf5 from "../../pdf/Software Engineering_WiT.pdf";
 
 import image1 from "../../images/carousel-slider/5.png";
 import image2 from "../../images/carousel-slider/3.png";
 import image3 from "../../images/carousel-slider/1.png";
 import image4 from "../../images/carousel-slider/4.png";
-import image5 from "../../images/carousel-slider/6.png";
 
 const infos1 = [
   {

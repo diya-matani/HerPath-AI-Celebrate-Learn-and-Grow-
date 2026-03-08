@@ -50,7 +50,7 @@ export default function Header() {
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
-                href="#"
+                href="#resources"
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -85,18 +85,15 @@ export default function Header() {
                 AI Portal
               </a>
             </li>
-            <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
-                href="#"
+                href="#community"
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <span className="fa fa-users fa-lg ">&nbsp;</span>
-                Community
               </a>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a className="dropdown-item" href="/community">

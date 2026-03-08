@@ -4,14 +4,13 @@ import image1 from "../../images/inspiring/grace.png";
 import image2 from "../../images/inspiring/anita.png";
 import image3 from "../../images/inspiring/reshma.png";
 import image4 from "../../images/inspiring/debjani.png";
-import image5 from "../../images/inspiring/geetha.png";
 import image6 from "../../images/inspiring/ashni.png";
 import image7 from "../../images/inspiring/ashwini.png";
 import image8 from "../../images/inspiring/roshni.png";
 
 import "../Contributing/ss.css";
 
-const content = [
+const inspirationalContent = [
   {
     image: image1,
     h3: "Grace Hopper",
@@ -40,13 +39,7 @@ const content = [
     p1: "Life hack: “It’s time for women to stop second-guessing ourselves and start believing that we are the best at what we do. If you don’t, no one else will believe it.”",
     li: "https://leanin.org/stories/debjani-ghosh",
   },
-  {
-    image: image5,
-    h3: " Geetha Kannan, Bengaluru",
-    h31: "Managing director, Anitab.org India",
-    p1: "Life hack: “Stay focused on the goal, and the opposition will melt away.”",
-    li: "https://yourstory.com/2018/11/women-equal-crucial-building-tech-world-needs-says-geetha-kannan-md-anitab-org",
-  },
+
   {
     image: image6,
     h3: " Ashni Dwarkadas, Mumbai",
