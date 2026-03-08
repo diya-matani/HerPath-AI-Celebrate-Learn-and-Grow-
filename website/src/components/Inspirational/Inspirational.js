@@ -4,6 +4,7 @@ import image1 from "../../images/inspiring/grace.png";
 import image2 from "../../images/inspiring/anita.png";
 import image3 from "../../images/inspiring/reshma.png";
 import image4 from "../../images/inspiring/debjani.png";
+import image5 from "../../images/inspiring/geetha.png";
 import image6 from "../../images/inspiring/ashni.png";
 import image7 from "../../images/inspiring/ashwini.png";
 import image8 from "../../images/inspiring/roshni.png";

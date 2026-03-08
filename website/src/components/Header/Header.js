@@ -85,6 +85,7 @@ export default function Header() {
                 AI Portal
               </a>
             </li>
+            <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
                 href="#community"
@@ -94,6 +95,8 @@ export default function Header() {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
+                <span className="fa fa-users fa-lg ">&nbsp;</span>
+                Community
               </a>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a className="dropdown-item" href="/community">
