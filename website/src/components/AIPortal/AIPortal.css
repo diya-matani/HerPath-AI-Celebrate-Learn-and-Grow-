@@ -16,10 +16,7 @@
 .ai-header h1 {
   font-size: 2.8rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #6c63ff 0%, #ff6b6b 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #2b2b2b;
   margin-bottom: 15px;
   letter-spacing: -0.5px;
 }
@@ -46,16 +43,16 @@
 }
 
 .nav-buttons .btn-primary {
-  background: linear-gradient(135deg, #6c63ff 0%, #8781fa 100%);
+  background: #2b2b2b;
   color: white;
   border-color: transparent;
-  box-shadow: 0 10px 25px rgba(108, 99, 255, 0.3);
+  box-shadow: 0 10px 25px rgba(43, 43, 43, 0.3);
   transform: translateY(-2px);
 }
 
 .nav-buttons .btn:hover:not(.btn-primary) {
-  border-color: #6c63ff;
-  color: #6c63ff;
+  border-color: #2b2b2b;
+  color: #2b2b2b;
   transform: translateY(-2px);
 }
 
@@ -78,7 +75,7 @@
   left: 0;
   width: 100%;
   height: 6px;
-  background: linear-gradient(90deg, #6c63ff, #ffbc6b);
+  background: #2b2b2b;
 }
 
 .ai-feature-card:hover {
@@ -111,13 +108,13 @@
 
 .form-control:focus {
   outline: none;
-  border-color: #6c63ff;
-  box-shadow: 0 0 0 4px rgba(108, 99, 255, 0.1);
+  border-color: #2b2b2b;
+  box-shadow: 0 0 0 4px rgba(43, 43, 43, 0.1);
   background: white;
 }
 
 form .btn-primary {
-  background: linear-gradient(135deg, #6c63ff 0%, #5b54d6 100%);
+  background: #2b2b2b;
   color: white;
   border: none;
   padding: 16px 32px;
@@ -127,12 +124,12 @@ form .btn-primary {
   font-weight: 600;
   transition: all 0.3s ease;
   width: 100%;
-  box-shadow: 0 8px 20px rgba(108, 99, 255, 0.25);
+  box-shadow: 0 8px 20px rgba(43, 43, 43, 0.25);
 }
 
 form .btn-primary:hover:not(:disabled) {
   transform: translateY(-3px);
-  box-shadow: 0 12px 25px rgba(108, 99, 255, 0.35);
+  box-shadow: 0 12px 25px rgba(43, 43, 43, 0.35);
 }
 
 form .btn-primary:disabled {
@@ -147,7 +144,7 @@ form .btn-primary:disabled {
   padding: 35px;
   border-radius: 16px;
   margin-top: 35px;
-  border-left: 6px solid #6c63ff;
+  border-left: 6px solid #2b2b2b;
   box-shadow: 0 10px 30px rgba(0,0,0,0.06);
   animation: slideUp 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -166,7 +163,7 @@ form .btn-primary:disabled {
 }
 
 .result-card h5 {
-  color: #6c63ff;
+  color: #2b2b2b;
   font-weight: 700;
   margin-top: 25px;
   margin-bottom: 15px;
@@ -193,7 +190,7 @@ form .btn-primary:disabled {
 
 .result-card li::before {
   content: "•";
-  color: #6c63ff;
+  color: #2b2b2b;
   font-weight: bold;
   display: inline-block; 
   width: 1em;
@@ -220,7 +217,7 @@ form .btn-primary:disabled {
 
 .timeline-item:hover {
   transform: translateX(10px);
-  border-color: #6c63ff;
+  border-color: #2b2b2b;
 }
 
 .timeline-item img {
@@ -243,19 +240,19 @@ form .btn-primary:disabled {
 }
 
 .ask-bot-container {
-  background: linear-gradient(135deg, #f4f7ff 0%, #eef2ff 100%);
+  background: #fdfdfd;
   padding: 20px;
   border-radius: 12px;
   margin-top: 20px;
-  border: 1px solid rgba(108, 99, 255, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 /* Mom Card Generator */
 .mom-card-preview {
-  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+  background: linear-gradient(135deg, #fdf0f4 0%, #fbdadd 100%);
   padding: 50px;
   border-radius: 20px;
-  color: #fff;
+  color: #d1495b;
   text-align: center;
   margin-top: 40px;
   min-height: 300px;
@@ -263,7 +260,7 @@ form .btn-primary:disabled {
   flex-direction: column;
   justify-content: center;
   font-family: 'Playfair Display', 'Georgia', serif;
-  box-shadow: 0 15px 35px rgba(255, 154, 158, 0.4);
+  box-shadow: 0 15px 35px rgba(235, 172, 179, 0.3);
   position: relative;
   overflow: hidden;
 }
@@ -294,7 +291,7 @@ form .btn-primary:disabled {
 
 .quote-text {
   font-size: 16px !important;
-  color: rgba(255, 255, 255, 0.9) !important;
+  color: #ad3d4c !important;
   margin-top: 35px !important;
   font-weight: 600;
   letter-spacing: 1px;

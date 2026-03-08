@@ -10,7 +10,7 @@ const AIPortal = () => {
   return (
     <div className="ai-portal-container">
       <div className="ai-header">
-        <h1>✨ AI-Powered Inspiration & Support Platform ✨</h1>
+        <h1>AI-Powered Inspiration & Support Platform</h1>
         <p className="lead mt-3">An exciting space combining inspiration, career support, and appreciation for women in technology!</p>
       </div>
 
@@ -19,19 +19,19 @@ const AIPortal = () => {
           className={`btn ${activeTab === 'mentor' ? 'btn-primary' : 'btn-outline-secondary'} mx-2`}
           onClick={() => setActiveTab('mentor')}
         >
-          👩‍💻 AI Career Mentor
+          AI Career Mentor
         </button>
         <button 
           className={`btn ${activeTab === 'timeline' ? 'btn-primary' : 'btn-outline-secondary'} mx-2`}
           onClick={() => setActiveTab('timeline')}
         >
-          ⏳ Achievement Timeline
+          Achievement Timeline
         </button>
         <button 
           className={`btn ${activeTab === 'momCard' ? 'btn-primary' : 'btn-outline-secondary'} mx-2`}
           onClick={() => setActiveTab('momCard')}
         >
-          💖 Appreciation Card
+          Appreciation Card
         </button>
       </div>
 

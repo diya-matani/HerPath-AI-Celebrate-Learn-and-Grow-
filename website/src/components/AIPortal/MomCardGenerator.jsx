@@ -15,7 +15,7 @@ const MomCardGenerator = () => {
 
   return (
     <div className="ai-feature-card">
-      <h3 className="mb-4">💖 Appreciation Section for Mothers & Housewives</h3>
+      <h3 className="mb-4">Appreciation Section for Mothers & Housewives</h3>
       <p>Recognizing the women who contribute immensely to our families and society but are often underappreciated.</p>
       
       {!showCard ? (
@@ -42,7 +42,7 @@ const MomCardGenerator = () => {
               required 
             ></textarea>
           </div>
-          <button type="submit" className="btn btn-primary mt-2">Generate "Thank You" Card 💌</button>
+          <button type="submit" className="btn btn-primary mt-2">Generate "Thank You" Card</button>
         </form>
       ) : (
         <div className="text-center">

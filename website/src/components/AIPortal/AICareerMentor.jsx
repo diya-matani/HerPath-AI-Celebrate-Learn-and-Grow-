@@ -38,7 +38,7 @@ const AICareerMentor = () => {
 
   return (
     <div className="ai-feature-card">
-      <h3 className="mb-4">👩‍💻 AI Career Mentor for Women</h3>
+      <h3 className="mb-4">AI Career Mentor for Women</h3>
       <p>Enter your current skills and your career goals, and let our simulated AI guide you on the path to success.</p>
       
       <form onSubmit={handleGenerate}>
@@ -73,25 +73,25 @@ const AICareerMentor = () => {
         <div className="result-card mt-4 p-4 shadow-sm">
           <h4>Your Personalized Plan</h4>
           
-          <h5 className="mt-3 text-primary">🔍 Skill Gap Analysis</h5>
+          <h5 className="mt-3 text-primary">Skill Gap Analysis</h5>
           <p>{result.gapAnalysis}</p>
           
-          <h5 className="mt-3 text-primary">🗺️ Learning Roadmap</h5>
+          <h5 className="mt-3 text-primary">Learning Roadmap</h5>
           <ul>
             {result.roadmap.map((step, idx) => <li key={idx}>{step}</li>)}
           </ul>
           
-          <h5 className="mt-3 text-primary">📚 Recommended Courses</h5>
+          <h5 className="mt-3 text-primary">Recommended Courses</h5>
           <ul>
             {result.courses.map((course, idx) => <li key={idx}>{course}</li>)}
           </ul>
           
-          <h5 className="mt-3 text-primary">💡 Suggested Projects</h5>
+          <h5 className="mt-3 text-primary">Suggested Projects</h5>
           <ul>
             {result.projects.map((proj, idx) => <li key={idx}>{proj}</li>)}
           </ul>
           
-          <h5 className="mt-3 text-primary">📝 Resume Improvement Tips</h5>
+          <h5 className="mt-3 text-primary">Resume Improvement Tips</h5>
           <ul>
             {result.resumeTips.map((tip, idx) => <li key={idx}>{tip}</li>)}
           </ul>
