@@ -47,6 +47,12 @@ export default function Header() {
                 Home
               </a>
             </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/ai-platform" style={{ color: '#6c63ff', fontWeight: 'bold' }}>
+                <span className="fa fa-magic fa-lg">&nbsp;</span>
+                AI Portal
+              </a>
+            </li>
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"

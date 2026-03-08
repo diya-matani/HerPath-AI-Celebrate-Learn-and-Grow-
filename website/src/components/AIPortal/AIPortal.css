@@ -1,0 +1,126 @@
+.ai-portal-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ai-header {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.ai-feature-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.ai-feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background: #6c63ff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background: #5b54d6;
+}
+
+.result-card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  border-left: 5px solid #6c63ff;
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.timeline-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.timeline-content {
+  flex: 1;
+}
+
+.ask-bot-container {
+  background: #eef2ff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.mom-card-preview {
+  background: linear-gradient(135deg, #fcebb6 0%, #f09a9d 100%);
+  padding: 40px;
+  border-radius: 15px;
+  color: #333;
+  text-align: center;
+  margin-top: 30px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Georgia', serif;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.mom-card-preview h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.mom-card-preview p {
+  font-size: 20px;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.quote-text {
+  font-size: 14px !important;
+  color: #555;
+  margin-top: 30px !important;
+  font-weight: bold;
+}
