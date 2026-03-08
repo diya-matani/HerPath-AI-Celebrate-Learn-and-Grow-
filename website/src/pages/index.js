@@ -22,9 +22,10 @@ function goTo(link) {
 
 export default () => (
   <Layout>
-    <div
-      className={`container d-flex flex-column justify-content-around ${styles.container}`}
-    >
+    <div style={{ paddingTop: '65px' }}>
+      <div
+        className={`container d-flex flex-column justify-content-around ${styles.container}`}
+      >
       <div className="row">
         <div className="xs-12">
           <CarouselComponent />
@@ -126,6 +127,7 @@ export default () => (
           />
         </div>
       </div>
+    </div>
     </div>
   </Layout>
 );

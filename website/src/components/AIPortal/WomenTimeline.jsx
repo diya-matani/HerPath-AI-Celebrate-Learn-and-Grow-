@@ -4,7 +4,7 @@ import './AIPortal.css';
 const leaders = [
   {
     name: 'Kalpana Chawla',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Kalpana_Chawla%2C_NASA_photo_portrait_in_orange_suit.jpg/800px-Kalpana_Chawla%2C_NASA_photo_portrait_in_orange_suit.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/e/e6/Kalpana_Chawla%2C_NASA_photo_portrait_in_orange_suit.jpg',
     journey: 'An American astronaut and engineer, the first woman of Indian origin to go to space.',
     struggles: 'Faced societal pressure and skepticism in India about women pursuing aeronautical engineering.',
     impact: 'Inspires millions of girls, especially in India, to dream big and reach for the stars.'
@@ -58,52 +58,63 @@ const WomenTimeline = () => {
       
       <div className="timeline-container mt-4">
         {leaders.map((leader, index) => (
-          <div className="timeline-item" key={index} style={{cursor: 'pointer'}} onClick={() => {
-            setSelectedLeader(leader);
-            setAskResponse('');
-          }}>
-            <img src={leader.image} alt={leader.name} />
-            <div className="timeline-content">
-              <h4>{leader.name}</h4>
-              <p className="text-muted">{leader.journey.substring(0, 50)}... <em>(Click to read more)</em></p>
+          <div key={index}>
+            <div className="timeline-item" style={{cursor: 'pointer', marginBottom: selectedLeader?.name === leader.name ? '0' : '20px'}} onClick={() => {
+              if (selectedLeader?.name === leader.name) {
+                setSelectedLeader(null);
+              } else {
+                setSelectedLeader(leader);
+              }
+              setAskResponse('');
+            }}>
+              <img src={leader.image} alt={leader.name} />
+              <div className="timeline-content">
+                <h4 style={{ color: '#2b2b2b', fontWeight: '800', marginBottom: '5px' }}>{leader.name}</h4>
+                <p className="text-muted">{leader.journey.substring(0, 50)}... <em>(Click to {selectedLeader?.name === leader.name ? 'close' : 'read more'})</em></p>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
 
-      {selectedLeader && (
-        <div className="result-card mt-5">
-          <h3 className="text-primary">{selectedLeader.name}</h3>
-          
-          <h5 className="mt-4">🛤️ Her Journey:</h5>
-          <p>{selectedLeader.journey}</p>
-          
-          <h5 className="mt-3">💪 Her Struggles:</h5>
-          <p>{selectedLeader.struggles}</p>
-          
-          <h5 className="mt-3">🌍 Impact on Technology/Science:</h5>
-          <p>{selectedLeader.impact}</p>
+            {selectedLeader?.name === leader.name && (
+              <div className="result-card mb-4" style={{ marginTop: '-10px', borderTopLeftRadius: '0', borderTopRightRadius: '0' }}>
+                <h3 className="text-primary">{selectedLeader.name}</h3>
+                
+                <h5 className="mt-4">🛤️ Her Journey:</h5>
+                <p>{selectedLeader.journey}</p>
+                
+                <h5 className="mt-3">💪 Her Struggles:</h5>
+                <p>{selectedLeader.struggles}</p>
+                
+                <h5 className="mt-3">🌍 Impact on Technology/Science:</h5>
+                <p>{selectedLeader.impact}</p>
 
-          <div className="ask-bot-container mt-4 border border-info">
-            <h5>🤖 Ask AI about {selectedLeader.name}</h5>
-            <form onSubmit={handleAsk} className="d-flex mt-3">
-              <input 
-                type="text" 
-                className="form-control me-2" 
-                placeholder="E.g., What inspired her the most?" 
-                value={askInput}
-                onChange={(e) => setAskInput(e.target.value)}
-              />
-              <button type="submit" className="btn btn-info text-white">Ask</button>
-            </form>
-            {askResponse && (
-              <div className="mt-3 p-3 bg-white rounded border">
-                {askResponse}
+                <div className="ask-bot-container mt-4 border border-info">
+                  <h5>🤖 Ask AI about {selectedLeader.name}</h5>
+                  <form onSubmit={(e) => {
+                    e.preventDefault();
+                    if (!askInput) return;
+                    setAskResponse(`Simulated AI: That's a great question about ${selectedLeader.name}! Based on historical data, she was known for her incredible resilience. (This is a mock response showcasing what an AI would reply)`);
+                    setAskInput('');
+                  }} className="d-flex mt-3">
+                    <input 
+                      type="text" 
+                      className="form-control me-2" 
+                      placeholder="E.g., What inspired her the most?" 
+                      value={askInput}
+                      onChange={(e) => setAskInput(e.target.value)}
+                    />
+                    <button type="submit" className="btn btn-info text-white">Ask</button>
+                  </form>
+                  {askResponse && (
+                    <div className="mt-3 p-3 bg-white rounded border">
+                      {askResponse}
+                    </div>
+                  )}
+                </div>
               </div>
             )}
           </div>
-        </div>
-      )}
+        ))}
+      </div>
     </div>
   );
 };

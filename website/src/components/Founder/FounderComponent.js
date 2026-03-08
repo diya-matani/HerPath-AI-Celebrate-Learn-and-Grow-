@@ -64,36 +64,20 @@ export default function MemberComponent() {
               <Card className="card">
                 <CardMedia
                   className={classes.cardMedia}
-                  image={image}
-                  title="Image title"
+                  image="https://github.com/diya-matani.png"
+                  title="Diya Matani"
                   style={{ height: "10px", margin: "center" }}
                 />
-                <h2 style={{ textAlign: "center" }}>Shikha Bhat</h2>
-                {/* <div className="links">
-                  <a href="https://github.com/shikha-16">
-                    <img
-                      className="links__item"
-                      src={github}
-                      alt="github profile"
-                    />
-                  </a>
-                  <a href="https://www.linkedin.com/in/shikha-b/">
-                    <img
-                      className="links__item"
-                      src={linkedin}
-                      alt="linkedin profile"
-                    />
-                  </a>
-                </div> */}
+                <h2 style={{ textAlign: "center" }}>Diya Matani</h2>
                 <ul className="links">
-                  <a href="https://github.com/shikha-16">
+                  <a href="https://github.com/diya-matani">
                     <img
                       className="links__item"
                       src={github}
                       alt="github profile"
                     />
                   </a>
-                  <a href="https://www.linkedin.com/in/shikha-b/">
+                  <a href="https://www.linkedin.com/in/diya-matani/">
                     <img
                       className="links__item"
                       src={linkedin}
@@ -103,21 +87,7 @@ export default function MemberComponent() {
                 </ul>
 
                 <CardContent className="card-content">
-                  Hi, I'm Shikha Bhat! I'm a third-year student pursuing
-                  Computer Science at BITS Pilani, Goa Campus. I'm keen to work
-                  at the intersection of computing and social sciences; to be
-                  able to identify problems in society and use technology to
-                  solve them. I have enjoyed being a part of diverse social
-                  impact projects like my research on clinical data analysis and
-                  prediction models for COVID-19 patients, implementation of
-                  robot path planning algorithms and the creation of Prithvi, a
-                  web extension for eco-friendly products. Lately I've been
-                  exploring the domains of Machine Learning and Data Science,
-                  and I really love it! I'm also a 2021 recipient of the
-                  Generation Google Scholarship APAC for women in computer
-                  science. I strongly believe that it is my responsibility to
-                  give back to the community and that is why I have started this
-                  initiative. Hope you find it useful!
+                  Hi, I'm Diya Matani! I'm passionate about technology and empowering women in the field of Computer Science. I started this initiative to bring together resources, communities, and support systems for young girls who want to explore and grow in the tech industry. I want to use technology to solve real-world problems and help others achieve their goals. Welcome to HerPath AI!
                 </CardContent>
               </Card>
             </Grid>
