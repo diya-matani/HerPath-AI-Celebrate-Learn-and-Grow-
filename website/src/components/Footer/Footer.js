@@ -36,7 +36,7 @@ export default function Footer() {
                 <a href="/community">About Us</a>
               </li>
               <li>
-                <a href="#">Privacy Policy</a>
+                <a href="/privacy">Privacy Policy</a>
               </li>
             </ul>
           </div>
@@ -54,9 +54,9 @@ export default function Footer() {
           <div className="col-md-3 col-sm-6 col-xs-12">
             <ul className="social-icons">
               <li>
-                <a>
+                <div style={{ display: "inline-block", cursor: "pointer" }}>
                   <DarkMode />
-                </a>
+                </div>
               </li>
               <li>
                 <a

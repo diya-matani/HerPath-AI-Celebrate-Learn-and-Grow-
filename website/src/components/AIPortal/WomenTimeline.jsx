@@ -51,15 +51,7 @@ const leaders = [
 
 const WomenTimeline = () => {
   const [selectedLeader, setSelectedLeader] = useState(null);
-  const [askInput, setAskInput] = useState('');
-  const [askResponse, setAskResponse] = useState('');
 
-  const handleAsk = (e) => {
-    e.preventDefault();
-    if (!askInput) return;
-    setAskResponse(`Simulated AI: That's a great question about ${selectedLeader.name}! Based on historical data, she was known for her incredible resilience. (This is a mock response showcasing what an AI would reply)`);
-    setAskInput('');
-  };
 
   return (
     <div className="ai-feature-card">
@@ -75,7 +67,6 @@ const WomenTimeline = () => {
               } else {
                 setSelectedLeader(leader);
               }
-              setAskResponse('');
             }}>
               <img src={leader.image} alt={leader.name} />
               <div className="timeline-content" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>

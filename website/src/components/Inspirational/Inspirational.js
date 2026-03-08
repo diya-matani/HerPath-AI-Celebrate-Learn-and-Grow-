@@ -11,6 +11,7 @@ import image8 from "../../images/inspiring/roshni.png";
 
 import "../Contributing/ss.css";
 
+// eslint-disable-next-line no-unused-vars
 const inspirationalContent = [
   {
     image: image1,
