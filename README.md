@@ -12,8 +12,6 @@ Check out the website here! :sparkles: [![Website shields.io](https://img.shield
 
 </div>
 
-Join my [Discord](https://discord.gg/j9eM73g7hH) server to be part of a community of inspiring women and connect with more like-minded people!
-
 ---
 
 ## <div align="center">Table of Contents</div>
