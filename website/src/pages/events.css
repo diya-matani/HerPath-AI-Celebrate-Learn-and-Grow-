@@ -1,0 +1,43 @@
+.eventList{
+    text-align: left;
+    padding-top:50px;
+    padding-left: 5px;
+}
+.eventName{
+    padding:5px;
+    font-size: x-large;
+}
+.eventHeading{
+    padding-left:30px;
+    text-decoration: underline;
+    text-align: center;
+}
+.eventLink{
+    text-decoration: none;
+}
+
+
+.cardevent{
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* .cardpara{
+    margin-top: 13px;
+    margin-bottom:20px;
+    margin-left: 5px;
+    margin-right: 5px;
+} */
+
+.block{
+    margin: auto;
+}
+
+@media screen and (max-width: 758px) {
+    .cardevent{
+        flex-direction: column;
+        display: grid;
+        grid-template-columns:  1fr;
+    }
+ }

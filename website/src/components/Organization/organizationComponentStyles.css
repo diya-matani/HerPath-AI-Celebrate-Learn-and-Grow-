@@ -1,0 +1,21 @@
+
+.org-info{
+     margin: auto 0; 
+    /* text-align: center; */
+}
+
+.org-details{
+    text-align: center;
+}
+
+.card{
+    display:initial;
+}
+
+.org-details > p{
+    font-size: 0.8rem;
+}
+
+.box-wrapper{
+    border:none;
+}
